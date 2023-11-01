@@ -7,7 +7,6 @@ import Button from "./buttons/button";
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
   padding: 2rem 5rem;
   border-radius: 20px;
   align-items: center;
