@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { breakpoins } from "../theme";
 
 const Container = styled.div`
   display: flex;
@@ -7,7 +8,17 @@ const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   color: white;
-  padding: 0 15rem;
+  padding: 1rem;
+
+  @media ${breakpoins.tablet} {
+    padding: 1rem 5rem;
+  }
+  @media ${breakpoins.laptop} {
+    padding: 0 15rem;
+  }
+  @media ${breakpoins.laptopL} {
+    padding: 0 20rem;
+  }
 `;
 
 const Layout = ({ children, ref }) => {

@@ -56,23 +56,23 @@ function App() {
   return (
     <div ref={confetiRef}>
       <Layout>
-        <div className="App">
-          {showConfetti && (
-            <Confetti
-              width={width}
-              height={height}
-              onConfettiComplete={() => setShowConfetti(false)}
-            />
-          )}
-          <Body text={ctaContents.bodyText} />
-          <CtaContainer
-            image={logo}
-            heading={ctaContents.headind}
-            lead={ctaContents.lead}
-            buttonLabel={ctaContents.buttonLabel}
-            onClick={onClick}
+        {/* <div className="App"> */}
+        {showConfetti && (
+          <Confetti
+            width={width}
+            height={height}
+            onConfettiComplete={() => setShowConfetti(false)}
           />
-        </div>
+        )}
+        <Body text={ctaContents.bodyText} />
+        <CtaContainer
+          image={logo}
+          heading={ctaContents.headind}
+          lead={ctaContents.lead}
+          buttonLabel={ctaContents.buttonLabel}
+          onClick={onClick}
+        />
+        {/* </div> */}
       </Layout>
     </div>
   );
