@@ -8,14 +8,16 @@ import { breakpoins } from "../theme";
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   background: #dbeefb;
-  width: 100%;
-  text-align: center @media ${breakpoins.tablet} {
+  text-align: center;
+
+  @media ${breakpoins.tablet} {
     padding: 2rem 1rem;
+    width: 100%;
   }
 `;
 
