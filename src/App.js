@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 import logo from "./logo.svg";
 import "./App.css";
 import CtaContainer from "./components/ctaContainer";
