@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import CtaButton from "./components/ctaButton";
+
+const ctaContents = {
+  headind: "Lorem ipsum dolor sit",
+  lead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio.",
+  buttonLabel: "Call to action",
+};
 
 function App() {
+  const onClick = () => {
+    console.log("jeeeee");
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CtaButton
+          image={logo}
+          heading={ctaContents.headind}
+          lead={ctaContents.lead}
+          buttonLabel={ctaContents.buttonLabel}
+          onClick={onClick}
+        />
       </header>
     </div>
   );
