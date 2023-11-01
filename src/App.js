@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import CtaButton from "./components/ctaButton";
+import CtaContainer from "./components/ctaContainer";
 import Confetti from "react-confetti";
 import { useState, useRef, useEffect } from "react";
 
@@ -31,7 +31,6 @@ function App() {
     }, "10000");
   }
 
-  console.log(showConfetti);
   return (
     <div className="App" ref={confetiRef}>
       {showConfetti && (
@@ -42,7 +41,7 @@ function App() {
         />
       )}
       <header className="App-header">
-        <CtaButton
+        <CtaContainer
           image={logo}
           heading={ctaContents.headind}
           lead={ctaContents.lead}
