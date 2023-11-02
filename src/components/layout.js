@@ -21,8 +21,8 @@ const Container = styled.div`
   }
 `;
 
-const Layout = ({ children, ref }) => {
-  return <Container ref={ref}>{children}</Container>;
+const Layout = ({ children }) => {
+  return <Container>{children}</Container>;
 };
 
 export default Layout;

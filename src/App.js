@@ -57,7 +57,6 @@ function App() {
   return (
     <div ref={confetiRef}>
       <Layout>
-        {/* <div className="App"> */}
         {showConfetti && (
           <Confetti
             width={width}
@@ -73,7 +72,6 @@ function App() {
           buttonLabel={ctaContents.buttonLabel}
           onClick={onClick}
         />
-        {/* </div> */}
       </Layout>
     </div>
   );
