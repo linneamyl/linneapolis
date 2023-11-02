@@ -9,6 +9,11 @@ const StyledButton = styled.div`
   padding: 1rem;
   border-radius: 50px;
   cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: #439e47;
+  }
 `;
 
 const Button = ({ label, onClick }) => {
